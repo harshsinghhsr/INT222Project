@@ -47,8 +47,7 @@ function viewTree(dirpath, indent) {
         // recursion
         let content = getContent(dirpath);
         // console.log(content);
-        for (let i = 0; i < content.length; i++) {
-            // /good practice
+        for (let i = 0; i < content.length; i++) 
             let childPath = p.join(dirpath, content[i])
             //  dirpath + "\\" + content[i];
             viewTree(childPath, indent + "\t");
